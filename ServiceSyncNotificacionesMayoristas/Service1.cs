@@ -100,7 +100,7 @@ namespace ServiceSyncNotificacionesMayoristas
             SqlConnection conn = new SqlConnection();
             try
             {
-                conn.ConnectionString = "Server=192.168.15.4\\clz;Database=BUFFER;User Id=usrMayorista;Password=appiMayo;";
+                conn.ConnectionString = "";
                 conn.Open();
             }
             catch (SqlException ex)

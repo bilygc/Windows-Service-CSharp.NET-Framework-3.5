@@ -17,7 +17,7 @@ namespace ServiceSyncNotificacionesMayoristas
         {
 
             StreamReader streamReader;
-            WebRequest reqObject = WebRequest.Create("http://apps.calzzapato.com/v1/api/login");
+            WebRequest reqObject = WebRequest.Create("http://apps._.com/v1/api/login");
             reqObject.Method = "POST";
             reqObject.ContentType = "application/json";
 
@@ -27,7 +27,7 @@ namespace ServiceSyncNotificacionesMayoristas
                 {
                     /*llenamos el objeto de la solicitud*/
                     ReqToken requestToken = new ReqToken();
-                    requestToken.email = "calzzapato@notificaciones.com";
+                    requestToken.email = "@notificaciones.com";
                     requestToken.password = "secret";
 
                     /*serialisamos el objeto y lo enviamos*/
@@ -135,7 +135,7 @@ namespace ServiceSyncNotificacionesMayoristas
             String token = this.obtenerToken();
 
 
-            WebRequest reqObject = WebRequest.Create("http://apps.calzzapato.com/v1/api/firebase/notificaciones/enviar");
+            WebRequest reqObject = WebRequest.Create("http://apps._.com/v1/api/firebase/notificaciones/enviar");
             reqObject.Method = "POST";
             reqObject.ContentType = "application/json";
             reqObject.Headers.Add("Authorization", "Bearer " + token);
@@ -191,7 +191,7 @@ namespace ServiceSyncNotificacionesMayoristas
             String token = this.obtenerToken();
 
 
-            WebRequest reqObject = WebRequest.Create("http://apps.calzzapato.com/v1/api/firebase/notificaciones/enviar");
+            WebRequest reqObject = WebRequest.Create("http://apps._.com/v1/api/firebase/notificaciones/enviar");
             reqObject.Method = "POST";
             reqObject.ContentType = "application/json";
             reqObject.Headers.Add("Authorization", "Bearer " + token);
@@ -261,7 +261,7 @@ namespace ServiceSyncNotificacionesMayoristas
             try
             {
 
-                conn.ConnectionString = "Server=192.168.15.4\\clz;Database=BUFFER;User Id=usrMayorista;Password=appiMayo;";
+                conn.ConnectionString = "";
                 conn.Open();
             }
             catch (SqlException ex)
